@@ -1,0 +1,80 @@
+<!-- <div class="new-data-container">
+    <button class="back-button" (click)="goBack()">Volver</button>
+    <h2>Nuevo Registro</h2>
+    <div>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" [(ngModel)]="name">
+    </div>
+    <div>
+      <label for="option">Opción:</label>
+      <select id="option" [(ngModel)]="option">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+      </select>
+    </div>
+    <div>
+      <label for="liters">Litros:</label>
+      <input type="number" id="liters" [(ngModel)]="liters">
+    </div>
+    <div>
+      <label for="image">Imagen:</label>
+      <input type="file" id="image" (change)="onImageChange($event)">
+    </div>
+    <div>
+      <label for="comment">Comentario:</label>
+      <textarea id="comment" [(ngModel)]="comment"></textarea>
+    </div>
+    <button class="save-button" (click)="saveData()">Guardar</button>
+</div>
+   -->
+
+<div class="container">
+<div class="row">
+    <div class="col-12">
+    <button type="button" class="btn btn-link" (click)="goBack()">
+        <img src="./assets/volver.png" alt="Botón" class="img-button">
+    </button>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-md-6">
+    <h2>Nuevo Sector</h2>
+    <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="name">
+    </div>
+    <div class="form-group">
+        <label for="option" class="opciones">Seleccione el tipo de planta:</label>
+        <select id="option" class="form-control" [(ngModel)]="option">
+        <option value="opcion1">Manzano</option>
+        <option value="opcion2">Naranjo</option>
+        <option value="opcion3">Tomatera</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="liters">Litros:</label>
+        <input type="number" id="liters" class="form-control" [(ngModel)]="liters">
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="form-group">
+        <div>
+            <label for="image">Imagen:</label>
+            <input type="file" id="image" (change)="onImageChange($event)">
+          </div>
+          <div *ngIf="imagePreview">
+            <img [src]="imagePreview" alt="Vista previa de imagen" class="imagensub">
+          </div>
+    </div>
+    <div class="form-group">
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" class="form-control" [(ngModel)]="comment"></textarea>
+    </div>
+    <div class="text-right">
+        <button type="button" class="btn btn-primary" (click)="saveData()">Guardar</button>
+    </div>
+    </div>
+</div>
+</div>
+  

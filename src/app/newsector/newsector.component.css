@@ -1,0 +1,39 @@
+.container{
+    margin-bottom: 65px;
+}
+
+.new-data-container {
+    margin: 20px;
+}
+  
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+  
+.save-button {
+    margin-top: 10px;
+}
+
+.img-button{
+    width: 30px;
+    margin-top: 15px;
+}
+
+.imagensub{
+    max-width: 340px;
+    max-height: 340px;
+    align-items: center;
+}
+
+.text-right{
+    margin-top: 10px;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+ .opciones{
+    margin-bottom: 10px;
+ }
