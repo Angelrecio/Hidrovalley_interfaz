@@ -38,8 +38,9 @@
     margin-top: 20px;
   }
   
-  .bi-plus-circle-fill {
-    font-size: 24px;
+  .bi.bi-plus-circle-fill {
+    font-size: 3rem;
     color: #0BCD5D;
+    margin-top: auto;
+    margin-left: auto;
   }
-  
