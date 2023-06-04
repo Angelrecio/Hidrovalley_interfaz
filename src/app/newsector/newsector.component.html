@@ -2,13 +2,14 @@
   <div class="row">
     <div class="col-12">
       <button type="button" class="btn btn-link" (click)="goBack()">
-        <img src="./assets/volver.png" alt="Botón" class="img-button">
+        <i class="bi bi-arrow-return-left"></i>
       </button>
     </div>
   </div>
   <div class="row align-items-center my-3">
     <div class="col-md-6">
-      <h2>Nuevo Sector</h2>
+      <div class="pepe"><h2>Nuevo Sector</h2></div>
+      
       <div class="form-group my-2">
         <label for="name">Nombre:</label>
         <input type="text" id="name" class="form-control">
@@ -30,7 +31,7 @@
       <div>
         <div class="form-group">
           <label for="image">Imagen:</label>
-          <input type="file" id="image" (change)="onImageChange($event)">
+          <input type="file" id="image" class="imagen" (change)="onImageChange($event)">
         </div>
         <div *ngIf="imagePreview">
           <img [src]="imagePreview" alt="Vista previa de imagen" class="imagensub">
@@ -40,9 +41,9 @@
         <label for="comment">Comentario:</label>
         <textarea id="comment" class="form-control"></textarea>
       </div>
-      <div>
-        <i class="bi bi-plus-circle-fill"></i>
-      </div>
+      <a class="button-container"  href = '/path_home'>
+        <button type="submit" class="btn btn-submit">Guardar</button>
+      </a>
     </div>
   </div>
 </div>

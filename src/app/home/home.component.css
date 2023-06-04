@@ -41,7 +41,7 @@ body {
 
 .rectangle-container {
     max-height: 350px;
-    border: 0px solid #ccc; 
+    border: px solid #ccc; 
     background-color: white;
     padding: none;
     border-radius: 10px;
@@ -55,8 +55,8 @@ body {
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #28a745; /* Verde más claro */
-
+    background-color: rgba(207, 251, 218, 0.903);
+    border-color: #28a745;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
 }
@@ -68,8 +68,8 @@ body {
   
 .text-container {
     margin-bottom: 10px;
-    color: white;
-    /* font-weight: bold; */
+    color: #28a745;
+    font-weight: bold;
 }
   
 .left-text, .right-text {
@@ -78,8 +78,8 @@ body {
   
 .button-container {
     position: fixed;
-    bottom: 80px;
-    right: 40px;
+    bottom: 90px;
+    right: 35px;
     z-index: 1;
 }
 
@@ -101,7 +101,7 @@ body {
     color: white;
     font-weight: bold;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top:10px;
 
 }
 

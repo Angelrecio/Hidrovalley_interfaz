@@ -1,7 +1,17 @@
 .container {
     margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    
   }
-  
+  h2{
+    font-weight: bold;
+    color: black;
+  }
+  .row{
+    margin: 10px;
+  }
+
   .btn-link {
     color: #0BCD5D;
   }
@@ -20,9 +30,8 @@
   }
   
   .form-control {
-    border: none;
-    border-radius: 0;
-    background-color: #f1f1f1;
+    border-color: #28a745;
+    background-color:white;
     box-shadow: none;
     margin-bottom: 10px;
   }
@@ -44,3 +53,36 @@
     margin-top: auto;
     margin-left: auto;
   }
+  .btn-link{
+    color: black;
+  }
+
+  .btn-submit {
+    background-color: #28a745; /* Verde naturaleza */
+    border-color: #28a745; /* Verde naturaleza */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top:10px;
+
+}
+
+.btn-submit:hover {
+    background-color: #007bff; /* Azul agua */
+    border-color: #007bff; /* Azul agua */
+}
+
+.button-container {
+  /* margin-bottom: 90px;
+  margin-right: 35px; */
+  z-index: 1;
+}
+
+label{
+  color: #28a745;
+  font-weight: bold;
+}
+
+.imagen{
+  color: transparent;
+}
