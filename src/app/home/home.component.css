@@ -52,11 +52,13 @@ body {
   
 .rectangle {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #0BCD5D;
+    background-color: #25D366; /* Verde más claro */
+
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
 }
   
 .half-rectangle {
@@ -87,3 +89,7 @@ body {
 .imagen_mas{
     width: 60px;
 }
+.bi.bi-plus-circle-fill {
+    font-size: 30px;
+  }
+  
