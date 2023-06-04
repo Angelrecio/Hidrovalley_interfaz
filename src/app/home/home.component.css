@@ -55,7 +55,7 @@ body {
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #25D366; /* Verde más claro */
+    background-color: #28a745; /* Verde más claro */
 
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
@@ -68,6 +68,8 @@ body {
   
 .text-container {
     margin-bottom: 10px;
+    color: white;
+    /* font-weight: bold; */
 }
   
 .left-text, .right-text {
@@ -92,4 +94,18 @@ body {
 .bi.bi-plus-circle-fill {
     font-size: 30px;
   }
-  
+
+.btn-submit {
+    background-color: #28a745; /* Verde naturaleza */
+    border-color: #28a745; /* Verde naturaleza */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+
+}
+
+.btn-submit:hover {
+    background-color: #007bff; /* Azul agua */
+    border-color: #007bff; /* Azul agua */
+}
