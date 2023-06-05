@@ -1,0 +1,11 @@
+<div class="plantas-container">
+  <div class="planta-card" *ngFor="let planta of plantas" (click)="mostrarDetalles(planta)">
+    <div class="planta-info">
+      <h3>Planta: {{ planta.nombre }}</h3>
+      <p>Horarios: {{ planta.horarios }}</p>
+    </div>
+    <div class="planta-icon">
+      <img src="{{ planta.icono }}" alt="Icono de la planta">
+    </div>
+  </div>
+</div>

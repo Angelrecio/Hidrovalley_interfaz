@@ -1,0 +1,71 @@
+<div class="container">
+    <h2>Agregar nueva planta</h2>
+    <div class="form-container">
+      <div class="input-container">
+        <label>
+          Nombre de la planta:
+          <input type="text" [(ngModel)]="planta.nombre">
+        </label>
+      </div>
+      
+      <div class="input-container">
+        <label>
+            Nivel de pH mínimo:
+            <input type="range" min="0" max="10" [(ngModel)]="planta.phMin" (input)="onPhMinChange($event)">
+            <span>{{ planta.phMin }}</span>
+          </label>
+      </div>
+      
+      <label>
+        Nivel de pH máximo:
+        <input type="range" min="0" max="10" [(ngModel)]="planta.phMax" (input)="onPhMaxChange($event)">
+        <span>{{ planta.phMax }}</span>
+      </label>
+      
+      <div class="minerales-container">
+        <div class="column">
+          <h4>Macro nutrientes:</h4>
+          <div *ngFor="let mineral of macroMinerales" class="mineral-checkbox">
+            <input type="checkbox" [(ngModel)]="mineralesSeleccionados[mineral]" id="{{ mineral }}">
+            <label for="{{ mineral }}">{{ mineral }}</label>
+          </div>
+        </div>
+        
+        <div class="column">
+          <h4>Micro nutrientes:</h4>
+          <div *ngFor="let mineral of microMinerales" class="mineral-checkbox">
+            <input type="checkbox" [(ngModel)]="mineralesSeleccionados[mineral]" id="{{ mineral }}">
+            <label for="{{ mineral }}">{{ mineral }}</label>
+          </div>
+        </div>
+      </div>
+      
+      <label>
+        Luz fase 1:
+        <input type="range" min="0" max="60" [(ngModel)]="planta.luzFase1" (input)="onLuzFase1Change($event)">
+        <span>{{ planta.luzFase1 }}</span>
+      </label>
+      
+      <label>
+        Luz fase 2:
+        <input type="range" min="0" max="60" [(ngModel)]="planta.luzFase2" (input)="onLuzFase2Change($event)">
+        <span>{{ planta.luzFase2 }}</span>
+      </label>
+      
+      <label>
+        Luz fase 3:
+        <input type="range" min="0" max="60" [(ngModel)]="planta.luzFase3" (input)="onLuzFase3Change($event)">
+        <span>{{ planta.luzFase3 }}</span>
+      </label>
+      
+      <label>
+        Descripción:
+        <textarea [(ngModel)]="planta.descripcion"></textarea>
+      </label>
+      
+      <div class="button-container">
+        <button class="btn-guardar" (click)="guardarPlanta()">Guardar</button>
+      </div>
+    </div>
+  </div>
+  
