@@ -18,6 +18,21 @@ export class PlantasComponent {
       horarios: '10:00 - 12:00',
       icono: 'ruta/al/imagen-2.png'
     },
+    {
+      nombre: 'Planta 3',
+      horarios: '10:00 - 12:00',
+      icono: 'ruta/al/imagen-2.png'
+    },
+    {
+      nombre: 'Planta 4',
+      horarios: '10:00 - 12:00',
+      icono: 'ruta/al/imagen-2.png'
+    },
+    {
+      nombre: 'Planta 5',
+      horarios: '10:00 - 12:00',
+      icono: 'ruta/al/imagen-2.png'
+    },
     // Agrega más objetos de planta según tus necesidades
   ];
 

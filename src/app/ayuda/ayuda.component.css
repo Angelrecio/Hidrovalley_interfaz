@@ -43,3 +43,7 @@
     max-width: 400px; /* Ancho máximo del formulario */
   }
   
+  h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

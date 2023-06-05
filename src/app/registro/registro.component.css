@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 60px;
   }
   
   .login-form {
@@ -15,6 +16,8 @@
   .logo-container {
     text-align: center;
     margin-bottom: 20px;
+    width: 80px;
+    margin-left: 70px;
   }
   
   .logo {
